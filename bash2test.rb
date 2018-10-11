@@ -10,4 +10,9 @@ require "minitest/autorun"
  		win_num = ["555", "666", "333", "222"]
  		assert_equal(["222", "333"], bash(my_tickets, win_num))
  	end
+ 	def test_3
+ 		my_tickets = ["345", "456", "333", "234", "999", "765"]
+ 		win_num = ["123", "456", "789", "999"]
+ 		assert_equal(["456", "999"], bash(my_tickets, win_num))
+ 	end
  end
